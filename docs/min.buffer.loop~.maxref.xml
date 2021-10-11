@@ -23,16 +23,6 @@
 
 	<objarglist>
 
-		<objarg name='buffer-name' optional='1' type='symbol'>
-			<digest>Initial buffer~ from which to read</digest>
-			<description>Initial buffer~ from which to read. </description>
-		</objarg>
-
-		<objarg name='channel' optional='1' type='int'>
-			<digest>Initial channel to read from the buffer~</digest>
-			<description>Initial channel to read from the buffer~. </description>
-		</objarg>
-
 	</objarglist>
 
 
@@ -40,14 +30,9 @@
 
 	<methodlist>
 
-		<method name='float'>
-			<digest>Toggle the recording attribute</digest>
-			<description>Toggle the recording attribute. </description>
-		</method>
-
-		<method name='set'>
-			<digest>Choose a named buffer~ from which to read</digest>
-			<description>Choose a named buffer~ from which to read. </description>
+		<method name='bang'>
+			<digest>Mute the frame </digest>
+			<description>Mute the frame </description>
 		</method>
 
 	</methodlist>
@@ -56,31 +41,6 @@
 	<!--ATTRIBUTES-->
 
 	<attributelist>
-
-		<attribute name='record' get='1' set='1' type='long' size='1' >
-			<digest>Record into the loop </digest>
-			<description>Record into the loop </description>
-		</attribute>
-
-		<attribute name='frames' get='1' set='1' type='float64' size='1' >
-			<digest>Length of the buffer~ in samples</digest>
-			<description>Length of the buffer~ in samples. </description>
-		</attribute>
-
-		<attribute name='speed' get='1' set='1' type='float64' size='1' >
-			<digest>Playback speed of the loop </digest>
-			<description>Playback speed of the loop </description>
-		</attribute>
-
-		<attribute name='length' get='1' set='1' type='float64' size='1' >
-			<digest>Length of the buffer~ in milliseconds</digest>
-			<description>Length of the buffer~ in milliseconds. </description>
-		</attribute>
-
-		<attribute name='channel' get='1' set='1' type='long' size='1' >
-			<digest>Channel to read from the buffer~</digest>
-			<description>Channel to read from the buffer~. </description>
-		</attribute>
 
 	</attributelist>
 
